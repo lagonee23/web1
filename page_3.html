@@ -4,9 +4,10 @@
 	<meta charset="utf-8">
 	<title>라고니의 Movie Trip</title>
 	<style>
-		a { color:red; }
-		p { color:brown;}
+		a { color:red; text-decoration: none; }
+		p { color:brown; }
 	</style>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156105795-1"></script>
 <script>
@@ -16,6 +17,7 @@
 
   gtag('config', 'UA-156105795-1');
 </script>
+
 </head>
 <body>
 	<header>
@@ -29,16 +31,17 @@
 		</ol>
 	</nav>
 	<article>
-		<h2>알라딘</h2>
-		<img src="Aladin-image.jpg" width="50%">
-		<p>
-		머나먼 사막 속 신비의 아그라바 왕국의 시대.<br>
-		좀도둑 ‘알라딘’은 마법사 ‘자파’의 의뢰로 마법 램프를 찾아 나섰다가 주인에게 세 가지 소원을 들어주는 지니를 만나게 되고,<br>
-		자스민 공주의 마음을 얻으려다 생각도 못했던 모험에 휘말리게 되는데…
-		</p>
-	
-		<p>
-			<div id="disqus_thread"></div>
+        <img src="Aladin-image.jpg" width="50%">
+        <h2>알라딘</h2>
+	    <p>
+	    머나먼 사막 속 신비의 아그라바 왕국의 시대.<br>
+	    좀도둑 ‘알라딘’은 마법사 ‘자파’의 의뢰로 마법 램프를 찾아 나섰다가 주인에게 세 가지 소원을 들어주는 지니를 만나게 되고,<br>
+	    자스민 공주의 마음을 얻으려다 생각도 못했던 모험에 휘말리게 되는데…
+	    </p>
+    </article>
+    
+    <!--댓글기능-->
+    <div id="disqus_thread"></div>
 <script>
 
 /**
@@ -58,10 +61,9 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		</p>
-	</article>
-	<!--Start of Tawk.to Script-->
-<script type="text/javascript">
+
+	<!--Start of Tawk.to Script - 홈페이지 주인과 방문자간의 채팅 기능-->
+	<script type="text/javascript">
 	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 	(function(){
 	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -73,5 +75,6 @@ s.setAttribute('data-timestamp', +new Date());
 	})();
 	</script>
 	<!--End of Tawk.to Script-->
+
 </body>
 </html>
