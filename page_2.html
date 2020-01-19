@@ -4,9 +4,24 @@
 	<meta charset="utf-8">
 	<title>라고니의 Movie Trip</title>
 	<style>
-		a { color:red; text-decoration: none; }
+		body { margin: 0; }
+		a { color:black; text-decoration: none; }
 		p { color:brown; }
-		h1 { font-size: 70px; text-align: center;}
+		h1 { 
+			font-size: 50px;
+			text-align: center;
+			border-bottom: 1px solid gray;
+			margin: 0;
+			padding: 20px;
+		}
+		ol {
+			border-right: 1px solid gray;
+			width: 100px;
+			margin: 0;
+			padding: 20px;
+		}
+		.saw { color: gray;}
+		#active { color: blue; text-decoration: underline;}
 	</style>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -26,8 +41,8 @@
 	</header>
 	<nav>
 		<ol>
-			<li><a href="page_1.html">겨울왕국</a></li>
-			<li><a href="page_2.html" style="color: blue; text-decoration: underline;">겨울왕국2</a></li>
+			<li><a href="page_1.html" class="saw">겨울왕국</a></li>
+			<li><a href="page_2.html" class="saw" id="active">겨울왕국2</a></li>
 			<li><a href="page_3.html">알라딘</a></li>
 		</ol>
 	</nav>
