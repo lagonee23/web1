@@ -20,44 +20,53 @@
 			margin: 0;
 			padding: 20px;
 		}
-		.saw { color: gray;}
-		#active { color: blue; text-decoration: underline;}
+		#grid {
+			display: grid;
+			grid-template-columns: 150px 3fr 1fr;
+		}
+		#grid ol {
+			padding-left: 35px;
+		}
+		#grid #article {
+			margin-left: 24px;
+		}
+		#grid img {
+			padding-top: 50px;
+		}
 	</style>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156105795-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156105795-1"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
 
-  gtag('config', 'UA-156105795-1');
-</script>
+  	gtag('config', 'UA-156105795-1');
+	</script>
 
 </head>
 <body>
-	<header>
-		<h1><a href="index.html">라고니의 MOVIE TRIP</a></h1>
-	</header>
-	<nav>
+	<h1><a href="index.html">라고니의 MOVIE TRIP</a></h1>
+	<div id="grid">
 		<ol>
-			<li><a href="page_1.html" class="saw" id="active">겨울왕국</a></li>
+			<li><a href="page_1.html">겨울왕국</a></li>
 			<li><a href="page_2.html">겨울왕국2</a></li>
 			<li><a href="page_3.html">알라딘</a></li>
 		</ol>
-	</nav>
-	<article>
-		<img src="frozen-image-1.jpg" width="50%">
-        <h2>겨울왕국</h2>
-	    <p>
-	    얼어붙은 세상을 녹일 자매가 온다!<br>
-	    서로가 최고의 친구였던 자매 ‘엘사’와 ‘안나’.<br>
-	    하지만 언니 ‘엘사’에게는 하나뿐인 동생에게조차 말 못할 비밀이 있다.<br>
-	    모든 것을 얼려버리는 신비로운 힘이 바로 그것.<br>
-	    ‘엘사’는 통제할 수 없는 자신의 힘이 두려워 왕국을 떠나고,<br>
-	    얼어버린 왕국의 저주를 풀기 위해 ‘안나’는 언니를 찾아 환상적인 여정을 떠나는데……
-	    </p>
-    </article>
+		<div id="article">
+			<h2>겨울왕국</h2>
+			<p>
+			얼어붙은 세상을 녹일 자매가 온다!<br>
+			서로가 최고의 친구였던 자매 ‘엘사’와 ‘안나’.<br>
+			하지만 언니 ‘엘사’에게는 하나뿐인 동생에게조차 말 못할 비밀이 있다.<br>
+			모든 것을 얼려버리는 신비로운 힘이 바로 그것.<br>
+			‘엘사’는 통제할 수 없는 자신의 힘이 두려워 왕국을 떠나고,<br>
+			얼어버린 왕국의 저주를 풀기 위해 ‘안나’는 언니를 찾아 환상적인 여정을 떠나는데……
+			</p>
+		</div>
+		<img src="frozen-image-1.jpg" width="80%">
+	</div>
     
     <!--댓글기능-->
     <div id="disqus_thread"></div>
