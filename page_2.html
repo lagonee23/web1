@@ -36,15 +36,16 @@
 				자신의 힘을 두려워했던 엘사는 이제 이 모험을 헤쳐나가기에 자신의 힘이 충분하다고 믿어야만 하는데…<br>
 				11월, 두려움을 깨고 새로운 운명을 만나다!
 				</p>
-				<input id="on_off" type="button" value="ON" onclick="
-				if(document.querySelector('#on_off').value==='ON'){
-				document.querySelector('#article').style.backgroundColor='DarkBlue';
-				document.querySelector('#article').style.color='white';
-				document.querySelector('#on_off').value='OFF';
+				<input type="button" value="ON" onclick="
+				var target=document.querySelector('#article');
+				if(this.value==='ON'){
+				target.style.backgroundColor='DarkBlue';
+				target.style.color='white';
+				this.value='OFF';
 				}else{
-				document.querySelector('#article').style.backgroundColor='white';
-				document.querySelector('#article').style.color='black';
-				document.querySelector('#on_off').value='ON';
+				target.style.backgroundColor='white';
+				target.style.color='black';
+				this.value='ON';
 				}
 				">
 			</div>

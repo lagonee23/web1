@@ -32,13 +32,14 @@
 				좀도둑 ‘알라딘’은 마법사 ‘자파’의 의뢰로 마법 램프를 찾아 나섰다가 주인에게 세 가지 소원을 들어주는 지니를 만나게 되고,<br>
 				자스민 공주의 마음을 얻으려다 생각도 못했던 모험에 휘말리게 되는데…
 				</p>
-				<input id="on_off" type="button" value="ON" onclick="
-				if(document.querySelector('#on_off').value==='ON'){
-					document.querySelector('#article').style.backgroundColor='Khaki';
-					document.querySelector('#on_off').value='OFF';
+				<input type="button" value="ON" onclick="
+				var target=document.querySelector('#article');
+				if(this.value==='ON'){
+					target.style.backgroundColor='Khaki';
+					this.value='OFF';
 				}else{
-					document.querySelector('#article').style.backgroundColor='white';
-					document.querySelector('#on_off').value='ON';
+					target.style.backgroundColor='white';
+					this.value='ON';
 				}
 				">
 			</div>

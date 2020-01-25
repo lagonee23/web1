@@ -35,13 +35,14 @@
 				‘엘사’는 통제할 수 없는 자신의 힘이 두려워 왕국을 떠나고,<br>
 				얼어버린 왕국의 저주를 풀기 위해 ‘안나’는 언니를 찾아 환상적인 여정을 떠나는데……
 				</p>
-				<input id="on_off" type="button" value="ON" onclick="
-				if(document.querySelector('#on_off').value==='ON'){
-					document.querySelector('#article').style.backgroundColor='Cyan';
-					document.querySelector('#on_off').value='OFF';
+				<input type="button" value="ON" onclick="
+				var target=document.querySelector('#article');
+				if(this.value==='ON'){
+					target.style.backgroundColor='Cyan';
+					this.value='OFF';
 				}else{
-					document.querySelector('#article').style.backgroundColor='white';
-					document.querySelector('#on_off').value='ON';
+					target.style.backgroundColor='white';
+					this.value='ON';
 				}
 				">
 			</div>
