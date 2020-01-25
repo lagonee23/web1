@@ -1,0 +1,23 @@
+User-agent: *
+Allow:/
+Sitemap:https://lagonee-movie.netlify.com/sitemap.xml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

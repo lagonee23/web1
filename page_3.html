@@ -3,50 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>라고니의 Movie Trip</title>
-	<style>
-		body { margin: 0; }
-		a { color:black; text-decoration: none; }
-		p { color:brown; }
-		h1 { 
-			font-size: 50px;
-			text-align: center;
-			border-bottom: 1px solid gray;
-			margin: 0;
-			padding: 20px;
-		}
-		ol {
-			border-right: 1px solid gray;
-			width: 100px;
-			margin: 0;
-			padding: 20px;
-		}
-		#grid {
-			display: grid;
-			grid-template-columns: 150px 3fr 1fr;
-		}
-		#grid ol {
-			padding-left: 35px;
-		}
-		#grid #article {
-			margin-left: 24px;
-		}
-		#grid img {
-			padding-top: 50px;
-		}
-		@media(max-width: 800px) {
-			#grid {
-				display: block;
-			}
-			ol {
-				border-right: none;
-				border-bottom: 1px solid gray;
-				padding-right: 800px;
-			}
-			#grid img {
-				display: none;
-			}
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156105795-1"></script>
@@ -68,14 +25,25 @@
 			<li><a href="page_3.html" class="saw" id="active">알라딘</a></li>
 		</ol>  
 		<div id="article">
-			<h2>알라딘</h2>
-			<p>
-			머나먼 사막 속 신비의 아그라바 왕국의 시대.<br>
-			좀도둑 ‘알라딘’은 마법사 ‘자파’의 의뢰로 마법 램프를 찾아 나섰다가 주인에게 세 가지 소원을 들어주는 지니를 만나게 되고,<br>
-			자스민 공주의 마음을 얻으려다 생각도 못했던 모험에 휘말리게 되는데…
-			</p>
+			<div id="article_son">
+				<h2>알라딘</h2>
+				<p>
+				머나먼 사막 속 신비의 아그라바 왕국의 시대.<br>
+				좀도둑 ‘알라딘’은 마법사 ‘자파’의 의뢰로 마법 램프를 찾아 나섰다가 주인에게 세 가지 소원을 들어주는 지니를 만나게 되고,<br>
+				자스민 공주의 마음을 얻으려다 생각도 못했던 모험에 휘말리게 되는데…
+				</p>
+				<input id="on_off" type="button" value="ON" onclick="
+				if(document.querySelector('#on_off').value==='ON'){
+					document.querySelector('#article').style.backgroundColor='Khaki';
+					document.querySelector('#on_off').value='OFF';
+				}else{
+					document.querySelector('#article').style.backgroundColor='white';
+					document.querySelector('#on_off').value='ON';
+				}
+				">
+			</div>
+			<img src="aladin_image_1.jpg" width="80%">
 		</div>
-		<img src="Aladin-image.jpg" width="80%">
 	</div>
     
     <!--댓글기능-->
