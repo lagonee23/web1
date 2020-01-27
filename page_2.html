@@ -20,9 +20,14 @@
 	<h1><a href="index.html">라고니의 MOVIE TRIP</a></h1>
 	<div id="grid">
 		<ol>
-			<li><a href="page_1.html" class="saw">겨울왕국</a></li>
-			<li><a href="page_2.html" class="saw">겨울왕국2</a></li>
-			<li><a href="page_3.html" class="saw" id="active">알라딘</a></li>
+			<script>
+				var movli=['겨울왕국', '겨울왕국2', '알라딘'];
+				var i=0;
+				while(i<movli.length) {
+					document.write('<li><a href="page_'+i+'.html">'+movli[i]+'</a></li>');
+					i=i+1;
+				}
+			</script>
 		</ol>  
 		<div id="article">
 			<div id="article_son">
