@@ -4,30 +4,7 @@
 	<meta charset="utf-8">
 	<title>라고니의 Movie Trip</title>
 	<link rel="stylesheet" href="style.css">
-	<script>
-		var Everything = {
-			movli : ['겨울왕국', '겨울왕국2', '알라딘'],
-			list : function() {
-				var i=0;
-				while(i<this.movli.length) {
-					document.write('<li><a href="page_'+i+'.html">'+this.movli[i]+'</a></li>');
-					i=i+1;
-				}
-			},
-			backColorOnOff : function(self, color1, color2) {
-				var target=document.querySelector('#article');
-				if(self.value==='ON'){
-					target.style.backgroundColor=color1;
-					target.style.color=color2;
-					self.value='OFF';
-				}else{
-					target.style.backgroundColor='white';
-					target.style.color='black'
-					self.value='ON';
-				}
-			}
-		}
-	</script>
+	<script src="myscript.js"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156105795-1"></script>
