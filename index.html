@@ -4,6 +4,18 @@
 	<meta charset="utf-8">
 	<title>라고니의 Movie Trip</title>
 	<link rel="stylesheet" href="style.css">
+	<script>
+		var Everything = {
+			movli : ['겨울왕국', '겨울왕국2', '알라딘'],
+			list : function() {
+				var i=0;
+				while(i<this.movli.length) {
+					document.write('<li><a href="page_'+i+'.html">'+this.movli[i]+'</a></li>');
+					i=i+1;
+				}
+			}
+		}
+	</script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156105795-1"></script>
@@ -21,12 +33,7 @@
 	<div id="grid">
 		<ol>
 			<script>
-				var movli=['겨울왕국', '겨울왕국2', '알라딘'];
-				var i=0;
-				while(i<movli.length) {
-					document.write('<li><a href="page_'+i+'.html">'+movli[i]+'</a></li>');
-					i=i+1;
-				}
+				Everything.list()
 			</script>
 		</ol>	
 		<div id="article">
