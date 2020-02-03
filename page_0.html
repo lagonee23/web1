@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>라고니의 Movie Trip</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="myscript.js"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -27,15 +28,15 @@
 		</ol>	
 		<div id="article">
 			<div id="article_son">
-				<h2>겨울왕국</h2>
-				<p>
-				얼어붙은 세상을 녹일 자매가 온다!<br>
-				서로가 최고의 친구였던 자매 ‘엘사’와 ‘안나’.<br>
-				하지만 언니 ‘엘사’에게는 하나뿐인 동생에게조차 말 못할 비밀이 있다.<br>
-				모든 것을 얼려버리는 신비로운 힘이 바로 그것.<br>
-				‘엘사’는 통제할 수 없는 자신의 힘이 두려워 왕국을 떠나고,<br>
-				얼어버린 왕국의 저주를 풀기 위해 ‘안나’는 언니를 찾아 환상적인 여정을 떠나는데……
-				</p>
+				<div id="name">
+					<script>
+						fetch('겨울왕국').then(function(response){
+							response.text().then(function(text){
+								document.querySelector('#name')=text;
+							})
+						})
+					</script>
+				</div>
 				<input type="button" value="ON" onclick="
 					Everything.backColorOnOff(this,'Cyan','black');
 				">
@@ -64,6 +65,7 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
+
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 	<!--Start of Tawk.to Script - 홈페이지 주인과 방문자간의 채팅 기능-->
