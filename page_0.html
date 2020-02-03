@@ -32,7 +32,7 @@
 					<script>
 						fetch('겨울왕국').then(function(response){
 							response.text().then(function(text){
-								document.querySelector('#name')=text;
+								document.querySelector('#name').innerHTML=text;
 							})
 						})
 					</script>
