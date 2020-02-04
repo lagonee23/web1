@@ -20,8 +20,8 @@ var Everything = {
         }
     },
     inputArticle : function(hash) {
-        fetch(hash).then(function(respose) {
-            Response.text().then(function(text) {
+        fetch(hash).then(function(response) {
+            response.text().then(function(text) {
                 document.querySelector('#real_article').innerHTML=text;
             })
         })
