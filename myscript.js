@@ -18,5 +18,12 @@ var Everything = {
             target.style.color='black'
             self.value='ON';
         }
+    },
+    inputArticle : function(hash) {
+        fetch(hash).then(function(respose) {
+            Response.text().then(function(text) {
+                document.querySelector('#real_article').innerHTML=text;
+            })
+        })
     }
 }

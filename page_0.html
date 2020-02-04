@@ -28,23 +28,16 @@
 		</ol>	
 		<div id="article">
 			<div id="article_son">
-				<div id="name">
-					<script>
-						fetch('겨울왕국').then(function(response){
-							response.text().then(function(text){
-								document.querySelector('#name').innerHTML=text;
-							})
-						})
-					</script>
-				</div>
+				<div id="real_article"></div>
 				<input type="button" value="ON" onclick="
 					Everything.backColorOnOff(this,'Cyan','black');
 				">
 			</div>
-			<img src="frozen_image_1.jpg" width="80%">
 		</div>
 	</div>
-    
+<script>
+	Everything.inputArticle('frozen');
+</script>
     <!--댓글기능-->
     <div id="disqus_thread"></div>
 <script>
